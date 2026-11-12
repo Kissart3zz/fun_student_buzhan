@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f4f6fa;
+  color: #233047;
+  font:
+    16px system-ui,
+    sans-serif;
+}
+header {
+  background: white;
+  border-bottom: 1px solid #dde3ec;
+  padding: 22px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  max-width: 1050px;
+  margin: 45px auto;
+  padding: 0 22px;
+}
+section {
+  background: white;
+  padding: 32px;
+  border: 1px solid #dde3ec;
+  border-radius: 12px;
+}
+#login {
+  max-width: 430px;
+  margin: 60px auto;
+}
+h1 {
+  margin-top: 0;
+  font-size: 30px;
+}
+p {
+  color: #58667b;
+}
+label {
+  display: block;
+  margin: 16px 0;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bec8d7;
+  border-radius: 6px;
+  font: inherit;
+  margin-top: 6px;
+}
+button {
+  background: #315ddb;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 11px 17px;
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #92b6ff;
+  outline-offset: 2px;
+}
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.toolbar input {
+  flex: 1;
+  min-width: 180px;
+  margin: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th,
+td {
+  padding: 16px 10px;
+  border-bottom: 1px solid #e5e9f0;
+}
+th {
+  color: #637087;
+  font-size: 14px;
+}
+td button {
+  margin: 3px;
+  font-size: 14px;
+}
+.scroll {
+  overflow: auto;
+}
+dialog {
+  width: min(460px, 92vw);
+  border: 1px solid #dde3ec;
+  border-radius: 12px;
+  padding: 26px;
+}
+dialog::backdrop {
+  background: #17263b80;
+}
+#status,
+#formError {
+  color: #b42318;
+  white-space: pre-wrap;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  section {
+    padding: 20px;
+  }
+  header {
+    padding: 16px;
+  }
+  main {
+    margin: 24px auto;
+  }
+  th,
+  td {
+    padding: 10px 6px;
+  }
+}
+input[type="checkbox"] {
+  display: inline;
+  width: auto;
+  margin-right: 10px;
+}
+fieldset {
+  border: 1px solid #bec8d7;
+  border-radius: 6px;
+}
